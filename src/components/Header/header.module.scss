@@ -1,0 +1,41 @@
+@use '../../style/global';
+
+.root {
+  position: fixed;
+  width: 100%;
+  height: global.$space-content;
+  display: flex;
+  padding: global.$space * 2;
+  align-items: center;
+  justify-content: space-between;
+  background-color: global.$primary-color;
+}
+
+.spacing {
+  height: global.$space-content;
+  background-color: red;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.a {
+  margin: global.$space;
+  font-size: global.$font-size-small;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 180ms;
+}
+
+.a:hover {
+  text-decoration-color: initial;
+}
+
+.a:not(:first-of-type)::before {
+  content: "|";
+  vertical-align: 1px;
+  opacity: 0.75;
+  margin-right: global.$space + 1px;
+}

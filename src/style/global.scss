@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+$space: 5px;
+$space-gutter: $space * 3;
+$space-content: 64px;
+$primary-color: rgb(15, 73, 217);
+$secondary-color: white;
+$font-size-bigger: 1.2rem;
+$font-size-big: 1.1rem;
+$font-size: 1rem;
+$font-size-small: 0.9rem;
+$font-size-smaller: 0.8rem;
+
+a {
+  color: inherit;
+}
+
+@mixin grid($no) {
+  .grid-#{$no} {
+    display: grid;
+    grid-template-columns: repeat($no, 1fr);
+    gap: $space-gutter;
+  }
+}
+
+@mixin gi($no, $direction: column) {
+  @if $direction != row and $direction != column {
+    @error "Direction #{$direction} must be either row or column.";
+  }
+
+  .gi-#{$no} {
+    grid-#{$direction}: $no;
+  }
+}
+
+@include grid(1);
+@include grid(2);
+@include grid(3);
+@include grid(4);
+
+@include gi(1);
+@include gi(2);
+@include gi(3);
+@include gi(4);
+
+.flex {
+  display: flex;
+  gap: $space-gutter;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,29 @@
+.root {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.content {
+  margin: 25px auto;
+}
+.map {
+  width: 100%;
+  margin-bottom: -5px;
+}
+.header {
+  margin: 25px;
+}
+.lowerBar {
+  padding: 5px;
+  background-color: #eee;
+}
+
+.icon {
+  object-fit: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.grid {
+  text-align: start;
+}
