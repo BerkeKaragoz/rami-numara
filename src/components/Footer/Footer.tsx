@@ -1,7 +1,6 @@
 import styles from "./footer.module.scss";
 import "../../style/global.scss";
 import Text from "../_shared/Text/Text";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import Icon from "../_shared/Icon/Icon";
 
 export default function Footer() {

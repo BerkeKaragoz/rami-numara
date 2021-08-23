@@ -2,19 +2,29 @@ import { FunctionalComponent, JSX } from "preact";
 import s from "./icon.module.scss";
 import clsx from "clsx";
 
-interface TextProps extends JSX.CSSProperties {
+interface TextProps {
   className?: string;
   as?: any; //TODO
+  button?: boolean;
+  onClick?: () => void;
 }
 
 const Icon: FunctionalComponent<TextProps> = (props) => {
-  const { children, className, as: IconComponent = "div", ...rest } = props;
+  const {
+    children,
+    className,
+    as: IconComponent = "div",
+    button,
+    onClick,
+    ...rest
+  } = props;
 
   return (
     <IconComponent
       className={clsx(s.root, className, {
-        //[s.gutters]: !disableGutters,
+        [s.button]: button,
       })}
+      onClick={onClick}
       {...rest}
     >
       {children}

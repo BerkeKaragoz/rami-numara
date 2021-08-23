@@ -11,6 +11,7 @@
   background-color: global.$primary-color;
   z-index: 10;
   box-shadow: 0px 0px 10px 2px #0008;
+  color: global.$secondary-color;
 }
 
 .spacing {
@@ -24,12 +25,52 @@
   white-space: nowrap;
 }
 
+.mobileNav {
+  display: none;
+}
+
 .a {
   margin: global.$space;
   font-size: global.$font-size-small;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 180ms;
+}
+
+.list {
+  text-align: right;
+}
+
+.listItem {
+  display: block;
+  text-decoration: none;
+  padding: global.$space * 2;
+  margin: global.$space;
+  font-weight: global.$font-weight-bold;
+  font-size: global.$font-size-bigger;
+  color: global.$primary-color;
+}
+
+.listItem::after {
+  content: "";
+  display: flex;
+  position: relative;
+  bottom: -2px;
+  background-color: black;
+  padding: 2px 0 0 0;
+  border-radius: 100% 0 0 0;
+  opacity: 0.1;
+  transition: 0.2s;
+}
+
+.listItem:hover::after {
+  padding: 2px 0 0 0;
+  opacity: 1;
+}
+
+.listItem:hover {
+  background-color: #0001;
+  border-radius: 5px;
 }
 
 .a:hover {
@@ -41,4 +82,19 @@
   vertical-align: 1px;
   opacity: 0.75;
   margin-right: global.$space + 1px;
+}
+
+.mobileButton {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
 }

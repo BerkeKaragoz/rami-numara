@@ -1,6 +1,7 @@
 import RamiNumaraLogo from "../RamiNumaraLogo/RamiNumaraLogo";
 import styles from "./header.module.scss";
-
+import Icon from "../_shared/Icon/Icon";
+import { func } from "../../../../../../Users/BlackRainbow/AppData/Local/Microsoft/TypeScript/4.3/node_modules/@types/assert-plus";
 const items = [
   {
     text: "Anasayfa",
@@ -38,13 +39,25 @@ const Navigation = (props: NavigationProps) => {
   const { items } = props;
 
   return (
-    <nav className={styles.nav}>
-      {items.map((item, index) => (
-        <a color="inherit" href={item.link} className={styles.a}>
-          {item.text}
-        </a>
-      ))}
-    </nav>
+    <>
+      <nav className={styles.nav}>
+        {items.map((item, index) => (
+          <a color="inherit" href={item.link} className={styles.a}>
+            {item.text}
+          </a>
+        ))}
+      </nav>
+
+      <nav className={styles.mobileNav}>
+        <Icon
+          button
+          className={styles.mobileButton}
+          onClick={() => console.log("ads")}
+        >
+          menu
+        </Icon>
+      </nav>
+    </>
   );
 };
 
@@ -55,7 +68,16 @@ const Header = () => {
         <RamiNumaraLogo />
         <Navigation items={items} />
       </header>
+
       <div className={styles.spacing} />
+
+      <div className={styles.list}>
+        {items.map((item, index) => (
+          <a color="inherit" href={item.link} className={styles.listItem}>
+            {item.text}
+          </a>
+        ))}
+      </div>
     </>
   );
 };
