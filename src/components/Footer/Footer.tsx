@@ -1,5 +1,8 @@
 import styles from "./footer.module.scss";
 import "../../style/global.scss";
+import Text from "../_shared/Text/Text";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import Icon from "../_shared/Icon/Icon";
 
 export default function Footer() {
   return (
@@ -10,43 +13,53 @@ export default function Footer() {
 
         <div className={"grid-3 " + styles.grid}>
           <div className={"flex"}>
-            <img
+            <Icon
               className={styles.icon}
-              src="https://via.placeholder.com/140x100"
-            />
+              style={{ color: "rgb(66, 133, 244)" }}
+            >
+              phone
+            </Icon>
             <div>
-              <a href="tel:02125454940">Tel: 0212 545 49 40 (Pbx)</a>
-              <p>Fax: 0212 545 12 51</p>
+              <Text light as="a" href="tel:02125454940">
+                Tel: 0212 545 49 40 (Pbx)
+              </Text>
+              <Text light>Fax: 0212 545 12 51</Text>
             </div>
           </div>
 
           <div className={"flex"}>
-            <img
-              className={styles.icon}
-              src="https://via.placeholder.com/140x100"
-            />
-            <address>
+            <Icon className={styles.icon} style={{ color: "rgb(219, 68, 55)" }}>
+              room
+            </Icon>
+            <Text light as="address">
               Rami Meydanı, Talimhane Cad., Topçulardeğirmeni Sk., Numara:14/A,
               Rami, Eyüp/İstanbul (Eyüp Trafik Şubesi ve İtfaiye Karşı Sokağı)
-            </address>
+            </Text>
           </div>
 
           <div className={"flex"}>
-            <img
-              className={styles.icon}
-              src="https://via.placeholder.com/140x100"
-            />
-            <a href="mailto:raminumara@gmail.com">raminumara@gmail.com</a>
+            <Icon className={styles.icon} style={{ color: "rgb(244, 180, 0)" }}>
+              mail
+            </Icon>
+            <Text light as="a" href="mailto:raminumara@gmail.com">
+              raminumara@gmail.com
+            </Text>
           </div>
 
           <div className={"gi-2 flex"}>
-            <img
+            <Icon
               className={styles.icon}
-              src="https://via.placeholder.com/140x100"
-            />
-            <a href="https://api.whatsapp.com/send?phone=+905327357272&text=Merhaba,%20">
+              style={{ color: "rgb(37, 211, 102)" }}
+            >
+              whatsapp
+            </Icon>
+            <Text
+              light
+              as="a"
+              href="https://api.whatsapp.com/send?phone=+905327357272&text=Merhaba,%20"
+            >
               Whatsapp Destek Hattı 0532 735 72 72
-            </a>
+            </Text>
           </div>
         </div>
       </div>
@@ -64,7 +77,7 @@ export default function Footer() {
       </div>
       <hr className={styles.divider} />
       <div className={styles.lowerBar}>
-        Rami Numara © {new Date().getUTCFullYear()}.
+        <Text disableGutters>Rami Numara © {new Date().getUTCFullYear()}.</Text>
       </div>
     </footer>
   );

@@ -20,23 +20,23 @@
 }
 .content {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 75%;
+  top: 50%;
+  left: 0;
+  right: 0;
   text-align: center;
-  transform: translate(-50%);
+  transform: translateY(-50%);
 }
 .contentText {
   color: global.$secondary-color;
   text-shadow: 1px 1px #f0f0f0, 2px 3px #aaa, 4px 5px #555, 0px 0px 30px #000,
     0px 0px 50px #000, 0px 0px 10px #000;
-  font-size: 8vh;
+  font-size: clamp(2rem, 8vw, 12vh);
   font-weight: 500;
 }
 .contentSubtitle {
   text-align: center;
   color: global.$secondary-color;
   text-shadow: 1px 2px #555, 0px 0px 10px #000;
-  font-size: 3vh;
+  font-size: clamp(1rem, 3vw, 4vh);
   font-weight: 500;
 }

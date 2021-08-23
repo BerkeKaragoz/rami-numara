@@ -1,0 +1,21 @@
+@use '../../../style/global.scss';
+
+.root {
+  font-style: normal;
+}
+
+.gutters {
+  margin: global.$space;
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+
+.light {
+  font-weight: global.$font-weight-thin;
+  font-size: global.$font-size-small;
+}
+
+.caption {
+}
