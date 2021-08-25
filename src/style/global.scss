@@ -48,6 +48,12 @@ a {
     grid-template-columns: repeat($no, 1fr);
     gap: $space-gutter;
   }
+
+  @media only screen and (max-width: 600px) {
+    .grid-#{$no} {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 @mixin gi($no, $direction: column) {
@@ -57,6 +63,12 @@ a {
 
   .gi-#{$no} {
     grid-#{$direction}: $no;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .gi-#{$no} {
+      grid-#{$direction}: 1;
+    }
   }
 }
 

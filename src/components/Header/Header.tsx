@@ -1,7 +1,10 @@
+import { useState } from "preact/hooks";
+
 import RamiNumaraLogo from "../RamiNumaraLogo/RamiNumaraLogo";
 import styles from "./header.module.scss";
 import Icon from "../_shared/Icon/Icon";
-import { func } from "../../../../../../Users/BlackRainbow/AppData/Local/Microsoft/TypeScript/4.3/node_modules/@types/assert-plus";
+import clsx from "clsx";
+
 const items = [
   {
     text: "Anasayfa",
@@ -31,53 +34,56 @@ interface NavigationItem {
   icon: any;
 }
 
-interface NavigationProps {
-  items: Array<NavigationItem>;
-}
-
-const Navigation = (props: NavigationProps) => {
-  const { items } = props;
-
-  return (
-    <>
-      <nav className={styles.nav}>
-        {items.map((item, index) => (
-          <a color="inherit" href={item.link} className={styles.a}>
-            {item.text}
-          </a>
-        ))}
-      </nav>
-
-      <nav className={styles.mobileNav}>
-        <Icon
-          button
-          className={styles.mobileButton}
-          onClick={() => console.log("ads")}
-        >
-          menu
-        </Icon>
-      </nav>
-    </>
-  );
-};
-
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(null);
+
   return (
     <>
       <header className={styles.root}>
         <RamiNumaraLogo />
-        <Navigation items={items} />
+        <nav className={styles.nav}>
+          {items.map((item, index) => (
+            <a color="inherit" href={item.link} className={styles.a}>
+              {item.text}
+            </a>
+          ))}
+        </nav>
+        <nav className={styles.mobileNav}>
+          <Icon
+            button
+            className={styles.mobileButton}
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            menu
+          </Icon>
+        </nav>
       </header>
 
       <div className={styles.spacing} />
 
-      <div className={styles.list}>
+      <div
+        className={clsx(styles.menu, {
+          [styles.menuOpen]: isMenuOpen,
+          [styles.menuClosed]: isMenuOpen === false,
+        })}
+      >
         {items.map((item, index) => (
-          <a color="inherit" href={item.link} className={styles.listItem}>
+          <a color="inherit" href={item.link} className={styles.menuItem}>
             {item.text}
           </a>
         ))}
       </div>
+
+      <div
+        onClick={() => {
+          setIsMenuOpen(!isMenuOpen);
+        }}
+        className={clsx({
+          [styles.backdrop]: isMenuOpen,
+        })}
+      />
     </>
   );
 };

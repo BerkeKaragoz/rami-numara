@@ -6,9 +6,7 @@ const ApplySection = (props) => {
     <section className={s.root}>
       <h3 className={s.text}>Rami Numara'ya başvuru nasıl yapılır?</h3>
       <a href="/basvuru">
-        <Button big className={s.button}>
-          Tıklayınız
-        </Button>
+        <Button className={s.button}>TIKLAYINIZ</Button>
       </a>
     </section>
   );

@@ -61,3 +61,18 @@
 a {
   display: inline-block;
 }
+
+@media only screen and (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: global.$space-gutter;
+    grid-auto-rows: minmax(164px, auto);
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .image {
+    max-height: 96px;
+    max-width: 96px;
+  }
+}
