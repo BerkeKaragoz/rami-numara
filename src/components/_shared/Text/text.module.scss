@@ -2,14 +2,23 @@
 
 .root {
   font-style: normal;
-}
-
-.gutters {
   margin: global.$space;
 }
 
-.noDecoration {
-  text-decoration: none;
+.caption {
+}
+
+.heading {
+  font-size: global.$font-size-bigger;
+  margin: global.$space * 2;
+}
+
+.headline {
+  font-size: global.$font-size-headline;
+  //font-weight: global.$font-weight-bold;
+  //color: global.$primary-color;
+  margin: global.$space * 2 global.$space-gutter global.$space-gutter
+    global.$space-gutter;
 }
 
 .light {
@@ -17,5 +26,10 @@
   font-size: global.$font-size-small;
 }
 
-.caption {
+.noGutters {
+  margin: 0;
+}
+
+.noDecoration {
+  text-decoration: none;
 }

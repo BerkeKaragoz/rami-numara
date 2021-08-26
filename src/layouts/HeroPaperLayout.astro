@@ -3,14 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import HeroPaper from '../components/HeroPaper/HeroPaper.tsx'
 import Paper from '../components/_shared/Paper/Paper.tsx'
 
-import '../style/hero-paper-layout.scss';
-
 const { content } = Astro.props;
 ---
 <BaseLayout title={content.title}>
     <HeroPaper>
-        <div class='hero-paper_root'>
-            <slot/>
-        </div>
+        <slot/>
     </HeroPaper>
 </BaseLayout>

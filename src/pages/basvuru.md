@@ -19,7 +19,10 @@ Aracın şase/motorunun araca ait olmadığının tespit edilmesi halinde, deği
 
 #### C:
 
-Aracın şase ve/veya motorunun orijinal olmasına rağmen üzerinde numara bulunmaması veya imalatçısı tarafından sehven hatalı vurulmuş olması halinde, orijinal numaraların tescil kayıtlarındaki numaralar ile aynı olması kaydıyla, doğru numaralar imalatçının/ithalatçının yetkilendirdiği kişi veya kurum tarafından vurulur Türkiye Noterler Birliğine bildirilir.
+Aracın şase ve/veya motorunun orijinal olmasına rağmen üzerinde numara bulunmaması veya imalatçısı tarafından sehven hatalı vurulmuş olması halinde, orijinal numaraların tescil kayıtlarındaki numaralar ile aynı olması kaydıyla, doğru numaralar imalatçının/ithalatçının yetkilendirdiği kişi veya kurum tarafından vurulur Türkiye Noterler Birliğine bildirilir.\
+\
+\
+\` `
 
 > **Rami Numara'ya yetkili kurum veya kuruşlarının tespit raporu ile başvuru yapılmalıdır.**
 

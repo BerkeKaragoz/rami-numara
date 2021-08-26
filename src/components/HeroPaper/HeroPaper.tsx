@@ -14,7 +14,7 @@ export const HeroPaper = (props: PageHeroProps) => {
         <div className={s.image} />
       </div>
       <div className={s.content}>
-        <Paper>{children}</Paper>
+        <Paper className={s.paper}>{children}</Paper>
       </div>
     </section>
   );

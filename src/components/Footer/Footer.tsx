@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.root}>
       <hr className={styles.divider} />
       <div className={styles.content}>
-        <h2 className={styles.header}>İletişim</h2>
+        <Text headline>İletişim</Text>
 
         <div className={"grid-3 " + styles.grid}>
           <div className={"flex"}>
