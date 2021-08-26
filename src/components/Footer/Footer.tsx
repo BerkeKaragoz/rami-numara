@@ -57,7 +57,7 @@ export default function Footer() {
               as="a"
               href="https://api.whatsapp.com/send?phone=+905327357272&text=Merhaba,%20"
             >
-              Whatsapp Destek Hattı 0532 735 72 72
+              Whatsapp Destek Hattı <br /> 0532 735 72 72
             </Text>
           </div>
         </div>
