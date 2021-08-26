@@ -6,7 +6,8 @@
   text-align: center;
 }
 .content {
-  margin: 25px auto;
+  margin: global.$space-gutter * 2 auto global.$space-gutter * 2 auto;
+  max-width: global.$screen-size-lg;
 }
 .map {
   width: 100%;
@@ -23,6 +24,10 @@
 
 .grid {
   text-align: start;
+}
+
+.divider {
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: global.$screen-size-sm) {

@@ -40,25 +40,27 @@ const Header = () => {
   return (
     <>
       <header className={styles.root}>
-        <RamiNumaraLogo />
-        <nav className={styles.nav}>
-          {items.map((item, index) => (
-            <a color="inherit" href={item.link} className={styles.a}>
-              {item.text}
-            </a>
-          ))}
-        </nav>
-        <nav className={styles.mobileNav}>
-          <Icon
-            button
-            className={styles.mobileButton}
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            menu
-          </Icon>
-        </nav>
+        <div className={styles.navContainer}>
+          <RamiNumaraLogo />
+          <nav className={styles.nav}>
+            {items.map((item, index) => (
+              <a color="inherit" href={item.link} className={styles.a}>
+                {item.text}
+              </a>
+            ))}
+          </nav>
+          <nav className={styles.mobileNav}>
+            <Icon
+              button
+              className={styles.mobileButton}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              menu
+            </Icon>
+          </nav>
+        </div>
       </header>
 
       <div className={styles.spacing} />

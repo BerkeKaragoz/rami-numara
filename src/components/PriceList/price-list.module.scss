@@ -6,6 +6,7 @@
   overflow-x: auto;
   border-collapse: collapse;
   box-shadow: 0px 1px 6px -2px #000a;
+  max-width: 100%;
 }
 
 .table th {
@@ -29,4 +30,11 @@
 
 .table th:first-of-type {
   text-align: start;
+}
+
+@media only screen and (max-width: global.$screen-size-sm) {
+  .table th,
+  .table td {
+    padding: global.$space-gutter;
+  }
 }

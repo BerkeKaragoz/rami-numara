@@ -1,12 +1,6 @@
 import s from "./price-list.module.scss";
 
-type PageHeroProps = {
-  title?: string;
-};
-
-export const LandingHero = (props: PageHeroProps) => {
-  const { title } = props;
-
+export const LandingHero = () => {
   return (
     <table className={s.table}>
       <thead>

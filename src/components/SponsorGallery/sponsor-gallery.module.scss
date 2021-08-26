@@ -49,6 +49,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: global.$space-gutter;
   grid-auto-rows: minmax(164px, auto);
+  max-width: global.$screen-size-lg;
+  margin: auto;
 }
 
 .text {

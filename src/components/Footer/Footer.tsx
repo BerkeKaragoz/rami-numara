@@ -74,9 +74,11 @@ export default function Footer() {
           scrolling="no"
         ></iframe>
       </div>
-      <hr className={styles.divider} />
       <div className={styles.lowerBar}>
-        <Text disableGutters>Rami Numara © {new Date().getUTCFullYear()}.</Text>
+        <hr className={styles.divider} />
+        <Text caption disableGutters>
+          Rami Numara © {new Date().getUTCFullYear()}.
+        </Text>
       </div>
     </footer>
   );
