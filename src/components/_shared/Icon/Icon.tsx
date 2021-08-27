@@ -1,15 +1,16 @@
-import { FunctionalComponent, JSX } from "preact";
+import { FunctionalComponent } from "preact";
 import s from "./icon.module.scss";
 import clsx from "clsx";
 
-interface TextProps {
+interface IconProps {
   className?: string;
   as?: any; //TODO
   button?: boolean;
   onClick?: () => void;
+  [key: string]: any;
 }
 
-const Icon: FunctionalComponent<TextProps> = (props) => {
+const Icon = (props: IconProps) => {
   const {
     children,
     className,

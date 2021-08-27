@@ -4,6 +4,7 @@ import RamiNumaraLogo from "../RamiNumaraLogo/RamiNumaraLogo";
 import styles from "./header.module.scss";
 import Icon from "../_shared/Icon/Icon";
 import clsx from "clsx";
+import Text from "../_shared/Text/Text";
 
 const items = [
   {
@@ -41,7 +42,18 @@ const Header = () => {
     <>
       <header className={styles.root}>
         <div className={styles.navContainer}>
-          <RamiNumaraLogo />
+          <div className={styles.logoContainer}>
+            <RamiNumaraLogo />
+            <div>
+              <h5
+                style={{
+                  color: "#EED8AA",
+                }}
+              >
+                <i>34. Yıl</i>
+              </h5>
+            </div>
+          </div>
           <nav className={styles.nav}>
             {items.map((item, index) => (
               <a color="inherit" href={item.link} className={styles.a}>

@@ -12,11 +12,18 @@
 
 .navContainer {
   display: flex;
+  height: 100%;
   margin: auto;
   align-items: center;
   justify-content: space-between;
   padding: global.$space * 2;
   max-width: global.$screen-size-lg;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: global.$space;
 }
 
 .spacing {

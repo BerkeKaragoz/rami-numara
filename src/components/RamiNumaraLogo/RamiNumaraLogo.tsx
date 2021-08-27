@@ -2,9 +2,11 @@ import styles from "./rami-numara-logo.module.scss";
 
 const RamiNumaraLogo = () => {
   return (
-    <a href={"/"} className={styles.root}>
-      <h3>Rami Numara</h3>
-    </a>
+    <div className={styles.root}>
+      <a href={"/"} className={styles.link}>
+        <h3>Rami Numara</h3>
+      </a>
+    </div>
   );
 };
 

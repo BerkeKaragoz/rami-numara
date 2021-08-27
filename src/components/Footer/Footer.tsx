@@ -69,7 +69,7 @@ export default function Footer() {
           height="500"
           id="gmap_canvas"
           title="Google Map"
-          src="https://maps.google.com/maps?q=Rami%20Numara&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Rami%20Numara&t=&z=14&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
           scrolling="no"
         ></iframe>

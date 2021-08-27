@@ -29,8 +29,8 @@
 }
 .contentText {
   color: global.$secondary-color;
-  text-shadow: 1px 1px #f0f0f0, 2px 3px #aaa, 4px 5px #555, 0px 0px 30px #000,
-    0px 0px 50px #000, 0px 0px 10px #000;
+  text-shadow: 1px 1px 0.5px #f0f0f0, 2px 2px 0.5px #aaa, 3px 3px 0.5px #555,
+    0px 0px 30px #000, 0px 0px 50px #000, 0px 0px 10px #000;
   font-size: clamp(2rem, 8vw, 8vh);
   font-weight: 500;
 }
