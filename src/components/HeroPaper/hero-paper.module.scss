@@ -7,11 +7,9 @@
 .image {
   position: absolute;
   --blur-amount: 3px;
-  width: calc(100% + var(--blur-amount) * 4);
+  width: 100%;
   height: calc(100% + var(--blur-amount) * 4);
   margin-top: calc(var(--blur-amount) * -2);
-  margin-left: calc(var(--blur-amount) * -2);
-  margin-right: calc(var(--blur-amount) * -2);
   background-image: url("/img/landing-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
