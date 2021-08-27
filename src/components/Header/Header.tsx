@@ -45,13 +45,14 @@ const Header = () => {
           <div className={styles.logoContainer}>
             <RamiNumaraLogo />
             <div>
-              <h5
+              <Text
+                as="h5"
                 style={{
                   color: "#EED8AA",
                 }}
               >
                 <i>34. Yıl</i>
-              </h5>
+              </Text>
             </div>
           </div>
           <nav className={styles.nav}>
