@@ -13,3 +13,7 @@
 .root:hover {
   filter: saturate(200%);
 }
+
+.root:active {
+  filter: invert(100%) hue-rotate(180deg) saturate(200%);
+}
