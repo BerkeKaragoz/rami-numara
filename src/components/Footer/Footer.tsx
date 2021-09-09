@@ -19,10 +19,10 @@ export default function Footer() {
               phone
             </Icon>
             <div>
-              <Text light as="a" href="tel:02125454940">
+              <Text as="a" href="tel:02125454940">
                 Tel: 0212 545 49 40 (Pbx)
               </Text>
-              <Text light>Fax: 0212 545 12 51</Text>
+              <Text>Fax: 0212 545 12 51</Text>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
             <Icon className={styles.icon} style={{ color: "rgb(219, 68, 55)" }}>
               room
             </Icon>
-            <Text light as="address">
+            <Text as="address">
               Rami Meydanı, Talimhane Cad., Topçulardeğirmeni Sk., Numara:14/A,
               Rami, Eyüp/İstanbul (Eyüp Trafik Şubesi ve İtfaiye Karşı Sokağı)
             </Text>
@@ -40,7 +40,7 @@ export default function Footer() {
             <Icon className={styles.icon} style={{ color: "rgb(244, 180, 0)" }}>
               mail
             </Icon>
-            <Text light as="a" href="mailto:raminumara@gmail.com">
+            <Text as="a" href="mailto:raminumara@gmail.com">
               raminumara@gmail.com
             </Text>
           </div>
@@ -53,7 +53,6 @@ export default function Footer() {
               whatsapp
             </Icon>
             <Text
-              light
               as="a"
               href="https://api.whatsapp.com/send?phone=+905327357272&text=Merhaba,%20"
             >
