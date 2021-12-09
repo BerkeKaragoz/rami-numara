@@ -16,12 +16,12 @@ export const LandingHero = () => {
             Otomobil, Minibüs, Kamyonet, Özel Amaçlı Taşıt, Arazi Taşıtı, Römork
             ve Yarı Römork
           </td>
-          <td>₺237</td>
+          <td>₺270</td>
           <td>₺343</td>
         </tr>
         <tr>
           <td>Traktör (Römorklu, Römorksuz), Motosiklet ve Motorlu Bisiklet</td>
-          <td>₺237</td>
+          <td>₺270</td>
           <td>₺343</td>
         </tr>
         <tr>
