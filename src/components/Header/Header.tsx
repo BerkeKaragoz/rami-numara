@@ -13,11 +13,6 @@ const items = [
     icon: `<HomeIcon />`,
   },
   {
-    text: "Fiyat Listesi",
-    link: "/fiyat",
-    icon: `<LocalOfferIcon />`,
-  },
-  {
     text: "Numara Başvurusu",
     link: "/basvuru",
     icon: `<DescriptionIcon />`,
