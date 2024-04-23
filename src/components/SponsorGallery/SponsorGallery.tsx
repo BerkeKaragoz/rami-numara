@@ -7,16 +7,6 @@ const logos = [
     text: "Makine Mühendisleri Odası",
   },
   {
-    img: "/img/İSTANBUL_TEKNİK_ÜNİVERSİTESİ_İTÜ_LOGO_TRANSPARAN_VEKTÖR_PNG.png",
-    url: "https://www.itu.edu.tr/",
-    text: "İstanbul Teknik Üniversitesi",
-  },
-  {
-    img: "/img/ytu_new_logo.png",
-    url: "https://www.yildiz.edu.tr/",
-    text: "Yıldız Teknik Üniversitesi",
-  },
-  {
     img: "/img/TNB_LOGO_Transparan.png",
     url: "https://portal.tnb.org.tr/",
     text: "Türkiye Noterler Birliği",
