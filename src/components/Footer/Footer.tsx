@@ -22,6 +22,9 @@ export default function Footer() {
               <Text as="a" href="tel:02125454940">
                 Tel: 0212 545 49 40 (Pbx)
               </Text>
+              <Text as="a" href="tel:05327357272">
+                Mob: 0532 735 7272
+              </Text>
               <Text>Fax: 0212 545 12 51</Text>
             </div>
           </div>
@@ -50,7 +53,7 @@ export default function Footer() {
               className={styles.icon}
               style={{ color: "rgb(37, 211, 102)" }}
             >
-              <img src="/img/whatsapp.png" alt="whatsapp"/>
+              <img src="/img/whatsapp.png" alt="whatsapp" />
             </Icon>
             <Text
               as="a"
@@ -66,11 +69,11 @@ export default function Footer() {
         <iframe
           width="100%"
           height="500"
-          id="gmap_canvas"
-          title="Google Map"
-          src="https://maps.google.com/maps?q=Rami%20Numara&t=&z=14&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
+          frameborder="0"
           scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=28.91872733831406%2C41.0462512032805%2C28.922064006328586%2C41.04878985326963&amp;layer=mapnik&marker=41.047429%2C28.920314"
         ></iframe>
       </div>
       <div className={styles.lowerBar}>
